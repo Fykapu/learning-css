@@ -1,0 +1,99 @@
+* {
+    font-family: "Epilogue", sans-serif;
+    font-weight: 400;
+    color: hsl(0, 0%, 41%);
+}
+
+
+/* Main Layout Structure */
+
+#main {
+    display: grid;
+    height: 80vh;
+    width: 95vw;
+    margin: 0;
+    grid-template-columns: 15% 1.3fr 1fr;
+    grid-template-rows: 7% 1fr 20%;
+    grid-template-areas: 
+    'logo nav nav'
+    '. content image'
+    '. clients image';
+    
+}
+
+/* NavBar */
+
+.logo {
+    grid-area: logo;
+    place-self: center;
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
+}
+
+nav > * {
+    flex: 1;
+    display: flex;
+    gap: 10%;
+    padding: 0 1rem;
+    align-items: center;
+}
+
+.auth {
+    justify-content: flex-end;
+}
+
+/* Left main text content */
+
+.text-content {
+    grid-area: content;
+    align-self: center;
+}
+
+/* Main image */
+
+
+.main-image {
+    grid-area: image;
+    object-fit: contain;
+    height: 100%;
+    width: 100%
+}
+
+/* Clients */
+
+.clients {
+    grid-area: clients;
+    display: flex;
+    gap: 2rem;
+}
+
+/* Simple styling */
+
+.slogan {
+    font-size: 4rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 8%);
+    margin: 0;
+}
+
+.lower-text {
+    width: 70%;
+    margin: 10% 0;
+}
+
+.learn-more {
+    background-color: hsl(0, 0%, 8%);
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.register {
+    padding: 0.7rem 1rem;
+    border: 2px solid hsl(0, 0%, 60%);
+    border-radius: 15px;
+}
