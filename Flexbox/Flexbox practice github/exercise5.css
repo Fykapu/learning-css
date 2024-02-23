@@ -1,0 +1,11 @@
+#e5 .container {
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#e5 .item {
+    width: 40%;
+}

@@ -1,0 +1,72 @@
+/* Main container */
+
+#main {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#main > * {
+    flex-basis: 80%
+}
+/* Solutions bar*/
+
+.solutions-bar {
+    display: flex;
+    
+}
+
+.solutions-bar > * {
+    flex: 1 1 33.3%;
+    display: flex;
+    aspect-ratio: 1;
+    flex-wrap: wrap;
+}
+
+* {
+    gap: 1.5vw;
+}
+
+.first-block > *{
+    flex: 1;
+    background-color: salmon;
+    border-radius: 7px;
+    display: flex;
+}
+
+
+.second-block > * {
+    background-color: salmon;
+    border-radius: 7px;
+    display: flex;
+}
+
+
+.e2, .e3 {
+    flex: 1 1 calc(50% - 1.5vw)
+}
+.e4 {
+    flex: 1;
+}
+
+
+.third-block > * {
+    background-color: salmon;
+    border-radius: 7px;
+    display: flex;
+}
+.e5 {
+    flex: 1 1 calc(100% - 1.5vw);
+}
+.e6 {
+    flex: 1 1 calc(100% - 1.5vw);
+}
+
+.element {
+    align-items: flex-end;
+}
+
+.element div {
+    margin: 1rem 
+}

@@ -1,0 +1,33 @@
+#e4 .container {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    align-items: flex-end;
+}
+
+#e4 .item {
+    flex-basis: 15%; /* или width: 15%     */
+}
+
+#e4 .i1 {
+    height: 40%;
+}
+
+#e4 .i2 {
+    height: 50%;
+}
+
+#e4 .i3 {
+    height: 60%;
+}
+
+#e4 .i4 {
+    height: 25%;
+}
+
+/* 
+    Комент по решению - flex-basis задает размер элемента, они занимают не полную страницу поэтому
+    можно использовать space-between чтобы сделать между ними пространство.
+    Также расширил сам див контейнер и опустил элементы вниз используя align-items: flex-end;
+    
+*/

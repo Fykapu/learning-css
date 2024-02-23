@@ -1,0 +1,47 @@
+body {
+	width: 50vw;
+	height: 50vh;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+.container {
+	display: flex;
+	
+}
+.container * {
+	border: 1px solid rgb(1, 201, 201);
+	border-radius: 5px;
+	margin: 5px
+}
+
+.c1 div{
+	flex: 1;
+}
+
+.c2 #el1{
+	flex: 2;
+}
+.c2 #el2 {
+	flex: 1;
+}
+
+.c3 #el1 {
+	flex: 1;
+}
+.c3 #el2 {
+	flex: 2;
+}
+
+@media all and (max-width: 1000px) {
+	.c2 {
+		flex-direction: column;
+	}
+	.c2 * {
+		flex: 1;
+	}
+	.c3 #el2 {
+		flex: 1;
+	}
+}

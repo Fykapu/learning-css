@@ -1,0 +1,13 @@
+#e9 .container {
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+#e9 .item {
+    width: 30%;
+    height: 30%;
+}

@@ -1,0 +1,71 @@
+/* Navigation bar */
+
+body {
+    margin: 30px 40px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #D3D3D3;
+    padding-bottom: 3%;
+}
+
+nav .navigation {
+    flex: 1;
+}
+
+.logo {
+    margin-right: 3%;
+}
+
+nav .navigation a {
+    color: #989898;
+    margin: 0 2%
+}
+
+.image-avatar {
+    margin-left: 3%;
+    height: 36px;
+    width: 36px;
+}
+
+nav .cart {
+    margin-left: 3%
+}
+
+/* Main content */
+
+#main {
+    display: flex;
+    height: 100vh;
+    align-items: flex-start;
+    margin-top: 10vh;
+}
+
+.image, .contents {
+    border: 1px solid salmon;
+    width: 50%;
+    box-sizing: border-box;
+    height: 65%;
+}
+
+.image {
+    padding: 10%;
+}
+
+.image .main-img {
+    width: 100%;
+}
+
+.image .sub-img {
+    width: 24%; 
+    /* can add calc here to make it 25,
+    but have to exclude 10% padding in .image */
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}

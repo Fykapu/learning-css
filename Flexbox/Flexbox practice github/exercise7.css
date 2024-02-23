@@ -1,0 +1,36 @@
+#e7 .container {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+
+
+#e7 .i1 {
+    flex-grow: 1;
+}
+
+#e7 .i2 {
+    flex-grow: 2;
+}
+
+#e7 .i3 {
+    flex-grow: 3;
+}
+
+#e7 .item {
+    height: auto; /* Потому что в html указано 100px  */
+}
+
+/*
+
+В CSS Flexbox, flex-grow контролирует способность flex-элементов растягиваться вдоль главной оси. 
+Главная ось зависит от значения свойства flex-direction.
+
+По умолчанию, если вы не задали flex-direction, основная ось направлена горизонтально, 
+и flex-grow будет влиять на ширину элементов.
+
+Когда flex-direction установлен в column, основная ось становится вертикальной,
+и flex-grow будет влиять на высоту элементов.
+
+
+*/

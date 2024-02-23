@@ -1,0 +1,19 @@
+#e6 .container {
+    display: flex;
+    height: 500px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+#e6 .item {
+    width: 40%;
+}
+
+
+/* 
+    Комент по решению - align content работает когда элементам flex контейнера не хватает места
+    и они переходят на новую строку. Для того чтобы регулировать растояние между элементами 
+    по оси Y, использовал align content
+    
+*/

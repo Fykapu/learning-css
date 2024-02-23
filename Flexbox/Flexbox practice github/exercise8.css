@@ -1,0 +1,11 @@
+#e8 .container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    align-items: center;
+}
+
+#e8 .item {
+    flex-grow: 1;
+    height: 30%;
+}

@@ -1,0 +1,63 @@
+#main {
+    display: flex;
+    gap: 3%;
+    align-items: stretch;
+}
+
+#info, #news {
+    /* border: 1px solid salmon; */
+    
+}
+
+#info {
+
+    flex:2;
+}
+
+#news {
+    flex:1
+}
+
+img {
+    max-width: 100%;
+}
+
+.main-article {
+    display: flex;
+
+}
+.main-article h1 {
+    font-size: 2.5em;
+}
+
+.main-article div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main-article button {
+    
+    width: 50%;
+    background-color:#f87070;
+    border: 0;
+    padding: 1em;
+    font-size: 18px;
+    color: white;
+}
+
+#news {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    gap: 5%;
+    padding: 2% 1%;
+    justify-content: space-evenly;
+}
+
+#news span {
+    color: orange;
+    font-size: 50px;
+    align-self: flex-start;
+}
