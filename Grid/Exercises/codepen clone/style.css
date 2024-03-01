@@ -1,0 +1,148 @@
+html {
+    box-sizing: border-box;
+    font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma,
+      Sans-Serif;
+    font-weight: normal;
+    color: #272727;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: normal;
+    margin: 0;
+    font-size: 1.3em;
+  }
+  p {
+    margin: 0;
+  }
+
+  .codepen {
+    display: grid;
+    grid-template-rows: 80px 1fr 1fr 50px;
+    min-height: 100vh;
+  }
+
+/* Header */
+
+header {
+    padding: 0 10px;
+}
+
+.pen {
+    display: flex;
+    align-items: center;
+    background-color: bisque;
+    gap: 0.5rem;
+    background-color: black;
+    color: white
+}
+
+.pen button {
+    background-color: #363636;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
+header .pen__details {
+    flex: 1;
+}
+
+.pen__details p {
+    font-size: 0.7em;
+    color: grey
+}
+
+/* Code Section */
+
+section.code {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 0.6rem;
+    background-color: #363636;
+}
+section.code .editor {
+    display: grid;
+    grid-template-rows: 1.5rem 1fr;
+    grid-template-columns: 1rem 1fr;
+    margin: 0.2rem;
+    background-color: #1B2B33;
+    color: white;
+    gap: 0.5rem;
+}
+
+header.editor__header {
+    display: flex;
+    align-items: center;
+}
+
+
+.editor__heading {
+    flex: 1;
+}
+
+button.editor__settings {
+    align-self: center;
+    margin: 3px 0;
+    border-radius: 5px;
+    color: white;
+    background-color: #303034;
+    border: none;
+}
+
+.editor__gutter {
+    justify-self: center;
+}
+
+textarea {
+    background-color: transparent;
+    border: none;
+    color: #7F7E7E;
+}
+
+.editor__heading {
+    color: #7F7E7E;
+    font-weight: 600;
+}
+
+.editor {
+    padding: 0.5rem;
+}
+/* Settings */
+
+footer {
+    background-color: #363636;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 10px;
+}
+
+footer button {
+    background-color: black;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 0.5rem;
+
+}
