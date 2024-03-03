@@ -1,0 +1,162 @@
+:root {
+  --default-gap: 2rem;
+}
+
+body {
+  font-size: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  border: 0;
+  background: #ffc600;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Main layout */
+.wrapper {
+  display: grid;
+  gap: var(--default-gap);
+}
+
+/* Top section */
+.top {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 2fr 1fr;
+  gap: var(--default-gap);
+  min-height: 400px;
+}
+.top > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.hero {
+  grid-row: 1 / 3;
+  align-items: flex-start;
+  padding: 5rem;
+  gap: 0;
+  min-height: 400px;
+  background-color: white;
+}
+.hero > * {
+  padding: 0.5rem;
+  background-color: var(--yellow);
+}
+.cta {
+  background-color: var(--yellow);
+}
+.cta > * {
+  margin: 0;
+}
+.price {
+  font-size: 6rem;
+  font-weight: 300;
+}
+
+/* Menu */
+[aria-controls="menu-list"] {
+  display: none;
+}
+.menu__item {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-size: 2rem;
+}
+#menu__list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 1rem 0;
+  margin: 0;
+  gap: 1rem;
+  height: 100%;
+}
+#menu__list > li {
+  flex: 1;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  list-style-type: none;
+  background-color: var(--yellow);
+}
+
+/* Features */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--default-gap);
+}
+.feature {
+  flex: 1 1 200px;
+  text-align: center;
+  padding: 2rem;
+  background-color: white;
+}
+.feature__description {
+  color: rgb(115, 115, 115);
+  font-weight: 600;
+}
+.icon {
+  font-size: 5rem;
+}
+
+/* About */
+.about {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  justify-items: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: white;
+}
+
+/* Gallery */
+.gallery__title {
+  text-align: center;
+  margin-bottom: var(--default-gap);
+}
+.gallery__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--default-gap);
+}
+
+@media all and (max-width: 1000px) {
+  .menu {
+    display: none;
+  }
+  [aria-controls="menu-list"] {
+    display: block;
+    width: 15%;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .top {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero {
+    grid-column: 1 / 3;
+  }
+  .about {
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px 1fr;
+    gap: 1rem;
+  }
+  .about__image {
+    object-fit: contain;
+  }
+  .about__details {
+    padding-bottom: 6rem;
+  } 
+}
